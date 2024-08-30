@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: net-init-svc
+  namespace: kuber-03-apps
+spec:
+  ports:
+    - name: nginx
+      port: 80
+  selector:
+    app: nginx
